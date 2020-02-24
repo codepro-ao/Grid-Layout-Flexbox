@@ -14,6 +14,9 @@ a{
     color: #fff;
 }
 
+h1{
+    text-align: center;
+}
 
 img{
     max-width: 100%;
@@ -51,9 +54,7 @@ img{
     width: 100%;
 }
 
-.layout1 h1{
-    text-align: center;
-}
+
 .layout1 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -108,4 +109,33 @@ img{
         grid-row: auto;
     }
     
+}
+
+/*  Página Layout 3  */
+
+.layout3 .grid{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap:  20px;
+    max-width: 800px;
+    padding: 10px;
+    margin:0 auto ;
+}
+
+.layout3 .grid .sidebar > div{
+    margin-bottom: 10px;
+}
+
+@media(max-width:600px){
+    .layout3 .grid{
+        grid-template-columns: 1fr;
+    }
+    .layout3 .grid .sidebar {
+        display: flex;
+        overflow: scroll;
+    }
+    .layout3 .grid .sidebar > div{
+        margin: 0 5px;
+        flex: 1 0 20px;
+    }
 }
