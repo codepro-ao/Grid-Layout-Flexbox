@@ -139,3 +139,37 @@ img{
         flex: 1 0 20px;
     }
 }
+
+/*  Página Layout 4  */
+
+.layout4 .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: o auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.layout4 .grid div:nth-child(1){
+    grid-row: 1/3;
+}
+
+.layout4 .grid div{
+    display: grid;
+}
+
+.layout4 .grid div img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+.layout4 .grid div p{
+    background: #000000aa;
+    padding: 10px;
+    color: #fff;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
