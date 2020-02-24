@@ -14,6 +14,10 @@ a{
 }
 
 
+img{
+    max-width: 100%;
+    display: block;
+}
 
 /*  Menu  */
 
@@ -42,3 +46,20 @@ a{
 
 /*  Página Layout 1  */
 
+.layout1{
+    width: 100%;
+}
+
+.layout1 h1{
+    text-align: center;
+}
+.layout1 .flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.layout1 .flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
