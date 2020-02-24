@@ -146,7 +146,7 @@ img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    margin: o auto;
+    margin: 0 auto;
     max-width: 800px;
     padding: 10px;
 }
