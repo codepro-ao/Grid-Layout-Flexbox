@@ -6,6 +6,7 @@ body, ul li, p{
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 a{
@@ -62,4 +63,49 @@ img{
 .layout1 .flex > div{
     flex: 1 1 200px;
     margin: 10px;
+}
+
+
+/*  Página Layout 2  */
+
+
+.layout2{
+    width: 100%;
+}
+
+
+.layout2 .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.layout2 .grid > div:nth-child(n +4){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   
+    gap: 18px;
+    align-items: center;
+}
+
+.layout2 .grid > div.anuncio{
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
+}
+
+@media(max-width:600px){
+    .layout2 .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .layout2 .grid > div:nth-child(n +4){
+        display: block;
+    }
+    .layout2 .grid > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
 }
