@@ -14,7 +14,8 @@ a{
     color: #fff;
 }
 
-h1{
+h1,
+h2{
     text-align: center;
 }
 
@@ -166,6 +167,38 @@ img{
 }
 
 .layout4 .grid div p{
+    background: #000000aa;
+    padding: 10px;
+    color: #fff;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
+
+/* Index */
+
+.index .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+ 
+.index .grid  div{
+    display: grid;
+}
+.index .grid  div:hover{
+    cursor: pointer;
+}
+.index > .grid div img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+.index .grid div p{
     background: #000000aa;
     padding: 10px;
     color: #fff;
