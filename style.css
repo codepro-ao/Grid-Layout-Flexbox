@@ -206,3 +206,11 @@ img{
     grid-row: 2;
     align-self: end;
 }
+
+
+@media(max-width:768px){
+    .index .grid{
+        grid-template-columns: 1fr;
+    }
+     
+}
