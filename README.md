@@ -43,7 +43,7 @@ Study guide of Grid-Layout and Flexbox
 [Preview](https://codepro-gridlayout-flexbox.netlify.com/)
 
 
-### Layout Exemple Image
+### Layout Image
 
 ![Layout Image Exemple](Layout.jpg)
 
