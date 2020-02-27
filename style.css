@@ -28,14 +28,18 @@ img{
 
 
 .header{
+    background-color: #333;
+    width: 100%;
+}
+.header-container{
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #333;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
 .menu{
     display: flex;
 }
@@ -43,11 +47,18 @@ img{
 .menu li{
     margin-left: 10px;
 }
-
 .menu li a{
     display: block;
-    padding: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff55;
 }
+
+a.githubCorne{
+    background-color: transparent!important;
+}
+
 
 /*  Página Layout 1  */
 
@@ -214,3 +225,32 @@ img{
     }
      
 }
+
+
+
+ /* open-source */
+ .githubCornerSVG{
+    fill:#1db954;
+    color:#fff;
+    position: absolute;
+    top: 0!important;
+    border: 0;
+    right: 0;
+    z-index: 999;
+    height: 65px;
+    width:65px;
+}
+
+@media (min-width:360px) and (max-width:554px ){
+    .githubCornerSVG{
+        height: 50px;
+        width: 50px;
+    }
+}
+@media (min-width:260px) and (max-width:359px ){
+    .githubCornerSVG{
+        height: 50px;
+        width: 50px;
+    }
+}
+ 
