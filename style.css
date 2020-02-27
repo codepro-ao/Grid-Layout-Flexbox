@@ -30,7 +30,22 @@ main h1{
 }
 /*  Menu  */
 
-
+@media(max-width:768px){
+    ul.menu{
+        padding: 0!important;
+    }
+    .menu li {
+        margin-left: 5px!important;
+    }
+    .header-container{
+        display: flex;
+        justify-content: center!important;
+        width: 100%;
+    }
+    .header-container a.logo{
+        padding-top: 10px;
+    }
+}
 .header{
     background-color: #333;
     width: 100%;
@@ -78,8 +93,14 @@ main h1{
     color: #777;
     background-color: #fff;
 }
+.li-github{
+    margin: 0!important;
+    width: 0!important;
+}
 a.githubCorne{
     background-color: transparent!important;
+    width: 0!important;
+   
 }
 
 
