@@ -40,12 +40,17 @@ img{
     max-width: 800px;
     margin: 0 auto;
 }
+.header-container a.logo{
+    font-family: 'Varela Round', ;
+    color: #fff;
+    font-weight: bolder;
+}
 .menu{
     display: flex;
 }
 
 .menu li{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .menu li a{
     display: block;
@@ -55,6 +60,20 @@ img{
     background-color: #ffffff55;
 }
 
+.menu .active::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background: #1db954;
+    height: 4px;
+    width: auto;
+    top: 19px;
+    position: relative;
+}
+.menu .active a{
+    color: #777;
+    background-color: #fff;
+}
 a.githubCorne{
     background-color: transparent!important;
 }
@@ -225,7 +244,6 @@ a.githubCorne{
     }
      
 }
-
 
 
  /* open-source */
